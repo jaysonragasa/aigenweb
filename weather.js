@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const weather = data.weather[0];
       const temperature = data.main.temp;
 
-      weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${weather.icon}.png" alt="${weather.description}">`;
+      weatherIcon.innerHTML = `<img src="img/${weather.icon}@2x.png" alt="${weather.description}">`;
       weatherDescription.textContent = weather.description;
       weatherTemperature.textContent = `${temperature}°${units === 'metric' ? 'C' : 'F'}`;
     })
@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const icon = entry.weather[0].icon;
         return `
           <div class="forecast-item">
-            <div>${date.toLocaleTimeString()}</div>
-            <div><img src="https://openweathermap.org/img/wn/${icon}.png" alt="${description}"></div>
+            <div>${date.toLocaleTimeString('en-US', { hour: 'numeric', hour12: true })}</div>
+            <div><img src="img/${icon}@2x.png" alt="${description}"></div>
             <div>${description}</div>
             <div>${temp}°${units === 'metric' ? 'C' : 'F'}</div>
           </div>

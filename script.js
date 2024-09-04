@@ -6,7 +6,7 @@ function updateClock() {
   const minutes = now.getMinutes().toString().padStart(2, '0');
   const seconds = now.getSeconds().toString().padStart(2, '0');
   
-  document.getElementById('hours').textContent = hours;
+  document.getElementById('hours').textContent = hours % 12 || 12;
   document.getElementById('minutes').textContent = minutes;
   document.getElementById('seconds').textContent = seconds;
   
