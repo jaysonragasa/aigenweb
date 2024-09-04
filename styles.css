@@ -13,11 +13,11 @@ body {
 .clock-container {
   text-align: center;
   z-index: 1;
-  background-color: black; /* Gray background */
+  background: rgba(0, 0, 0, 0.4); /* Gray background */
   border-radius: 15px;    /* Rounded corners */
   padding: 20px;          /* Add some padding */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for better visual */
-  opacity: 0.5
+  opacity: 1
 }
 
 .analog-clock {
