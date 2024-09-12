@@ -45,5 +45,5 @@ document.getElementById('ventusky-btn').addEventListener('click', function() {
 });
 
 document.getElementById('spotify-btn').addEventListener('click', function() {
-  document.getElementById('background-iframe').src = 'https://open.spotify.com/';
+  document.getElementById('background-iframe').src = 'https://open.spotify.com/embed/playlist/37i9dQZF1DWYBkvNBaUBeu?utm_source=generator';
 });
