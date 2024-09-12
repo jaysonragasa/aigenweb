@@ -10,8 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- iframe src="https://classic.nullschool.net/#current/wind/surface/level/orthographic=-212.68,16.77,1428" class="background-iframe"></iframe -->
-  <iframe src="https://www.ventusky.com/?p=13.8;142.6;4&l=rain-3h" class="background-iframe"></iframe>
+  <iframe id="background-iframe" class="background-iframe" src="https://www.ventusky.com/?p=13.8;142.6;4&l=rain-1h"></iframe>
   <div class="clock-container">
     <div class="analog-clock">
       <div class="clock-face">
@@ -31,6 +30,12 @@
       <div id="weather-description"></div>
       <div id="weather-temperature"></div>
       <div id="weather-forecast"></div>
+    </div>
+	
+	<!-- Two buttons for background switch -->
+    <div class="button-container">
+      <button id="ventusky-btn">Ventusky</button>
+      <button id="spotify-btn">Spotify</button>
     </div>
   </div>
   <script src="script.js"></script>

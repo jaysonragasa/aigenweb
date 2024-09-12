@@ -39,3 +39,11 @@ setInterval(updateClock, 1000);
 
 // Initial call to set the clock immediately
 updateClock();
+
+document.getElementById('ventusky-btn').addEventListener('click', function() {
+  document.getElementById('background-iframe').src = 'https://www.ventusky.com/?p=13.8;142.6;4&l=rain-1h';
+});
+
+document.getElementById('spotify-btn').addEventListener('click', function() {
+  document.getElementById('background-iframe').src = 'https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M';
+});
